@@ -46,7 +46,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "config/**/*.ts",
+    "config/**/*.ts", "config/dev.env.js", "config/dev.env.js", "config/index.js", "config/index.js", "config/prd.env.js", "config/prd.env.js", "config/pre.env.js", "config/pre.env.js", "config/sit.env.js", "config/sit.env.js",
   ],
   "exclude": [
     "node_modules",
