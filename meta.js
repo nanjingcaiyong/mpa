@@ -68,8 +68,8 @@ module.exports = {
   filters: {
     '.eslintrc.js': 'lint',
     '.eslintignore': 'lint',
-    '(build|config|src)**/*.ts': 'ts',
-    '(build|config|src)**/*.js': '!ts',
+    '+(build|config|src)/**/*.ts': 'ts',
+    '+(build|config|src)/**/*.js': '!ts',
     'typings/**/*': 'ts',
     'tsconfig.json': 'ts',
     'tailwind.config.js': 'tailwind'
