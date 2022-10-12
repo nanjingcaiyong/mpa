@@ -49,7 +49,7 @@ module.exports = {
       type: 'string',
       message: 'Author',
     },
-    lint: {
+    eslint: {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Use ESLint to lint your code?',
@@ -72,7 +72,8 @@ module.exports = {
     '+(build|config|src)/**/*.js': '!ts',
     'typings/**/*': 'ts',
     'tsconfig.json': 'ts',
-    'tailwind.config.js': 'tailwind'
+    'tailwind.config.js': 'tailwind',
+    '**/.eslint+(ignore|rc)': 'eslint'
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
