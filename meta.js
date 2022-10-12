@@ -68,6 +68,7 @@ module.exports = {
   filters: {
     '+(build|config|src)/**/*.ts': 'ts',
     '+(build|config|src)/**/*.js': '!ts',
+    'babel-preset-vue-ts.js': 'ts',
     'typings/**/*': 'ts',
     'tsconfig.json': 'ts',
     'tailwind.config.js': 'tailwind',

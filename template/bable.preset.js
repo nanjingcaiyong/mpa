@@ -14,8 +14,10 @@ module.exports = function (api, options = {}) {
           'corejs': 3
         },
       ],
+      {{#if ts}}
       require.resolve('@babel/preset-typescript'),
       require('./babel-preset-vue-ts'),
+      {{/if}}
     ],
     plugins: [
       [
