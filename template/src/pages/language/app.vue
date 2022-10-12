@@ -15,13 +15,13 @@
     </button>
   </div>
 </template>
-<script lang="ts">
+<script>
 import { useI18n } from 'vue-i18n';
 import { defineComponent } from 'vue';
 export default defineComponent({
   setup () {
     const { locale } = useI18n();
-    const setLangCodition = (val:string) => {
+    const setLangCodition = (val) => {
       locale.value = val;
       localStorage.setItem('language', locale.value);
     };
