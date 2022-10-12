@@ -110,7 +110,7 @@
     "stylelint-order": "^4.1.0",
     {{#if tailwind}}
     "tailwindcss": "^3.0.24",
-    {{#if}}
+    {{/if}}
     "thread-loader": "^3.0.4",
     "url-loader": "^4.1.1",
     "vue-eslint-parser": "^8.3.0",
