@@ -1,7 +1,7 @@
 import { createI18n } from 'vue-i18n';
 
-const languageFiles = require.context('@/language', true, /(?<!index)\.ts/);
-const sitefiles = require.context('.', true, /(?<!index)\.ts/);
+const languageFiles = require.context('@/language', true, /(?<!index)\.js/);
+const sitefiles = require.context('.', true, /(?<!index)\.js/);
 const defaultSite = 'www';
 
 const prefixReg = /[\.]\w+/g;
