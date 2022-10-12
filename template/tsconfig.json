@@ -46,7 +46,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "config/**/*.ts", "config/dev.env.js", "config/dev.env.js", "config/index.js", "config/index.js", "config/prd.env.js", "config/prd.env.js", "config/pre.env.js", "config/pre.env.js", "config/sit.env.js", "config/sit.env.js",
+    "config/**/*.ts", "config/dev.env.js", "config/dev.env.js", "config/index.js", "config/index.js", "config/prd.env.js", "config/prd.env.js", "config/pre.env.js", "config/pre.env.js", "config/sit.env.js", "config/sit.env.js", "src/apis/index.js", "src/apis/index.js", "src/apis/shipping.js", "src/apis/shipping.js", "src/language/de.js", "src/language/de.js", "src/language/en.js", "src/language/en.js", "src/language/fr.js", "src/language/fr.js", "src/language/zhCN.js", "src/language/zhCN.js", "src/pages/language/main.js", "src/pages/language/main.js", "src/site/au.js", "src/site/au.js", "src/site/ca.js", "src/site/ca.js", "src/site/de.js", "src/site/de.js", "src/site/en.js", "src/site/en.js", "src/site/fr.js", "src/site/fr.js", "src/site/index.js", "src/site/index.js", "src/site/www.js", "src/site/www.js", "src/router.js", "src/router.js",
   ],
   "exclude": [
     "node_modules",
