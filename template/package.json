@@ -4,32 +4,6 @@
   "author": "{{ author }}",
   "version": "0.0.1",
   "main": "index.js",
-  "scripts": {
-    "dev": "npm run dev:sit",
-    {{#if ts}}
-    "dev:sit": "ts-node build/dev.server.ts sit",
-    "dev:pre": "ts-node build/dev.server.ts pre",
-    "dev:prd": "ts-node build/dev.server.ts prd",
-    "build": "npm run build:sit",
-    "build:sit": "ts-node build/build.ts sit",
-    "build:pre": "ts-node build/build.ts pre",
-    "build:prd": "ts-node build/build.ts prd",
-    {{else}}
-    "dev:sit": "node build/dev.server.js sit",
-    "dev:pre": "node build/dev.server.js pre",
-    "dev:prd": "node build/dev.server.js prd",
-    "build": "npm run build:sit",
-    "build:sit": "node build/build.js sit",
-    "build:pre": "node build/build.js pre",
-    "build:prd": "node build/build.js prd",
-    {{/if}}
-    "lint": "eslint --ext .js,.vue,.ts src && stylelint --ext",
-    "lint:fix": "eslint --fix --ext .js,.vue,.ts src",
-    "stylelint": "stylelint 'src/**/*.{vue,less}'",
-    "stylelint:fix": "stylelint 'src/**/*.{vue,less}' --fix",
-    "prepare": "husky install",
-    "release": "standard-version"
-  },
   "keywords": [
     "vue3",
     "webpack5",

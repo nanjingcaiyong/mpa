@@ -1,0 +1,56 @@
+{
+  "scripts": {
+    {{#if ts}}
+    "dev": [
+      "ts-node",
+      "build/dev.server.ts",
+      ["请选择环境", ["dev", "sit", "pre", "prd"]]
+    ],
+    "build": [
+      "ts-node",
+      "build/build.ts",
+      ["请选择环境", ["dev", "sit", "pre", "prd"]]
+    ],
+    {{else}}
+    "dev": [
+      "node",
+      "build/dev.server.js",
+      ["请选择环境", ["dev", "sit", "pre", "prd"]]
+    ],
+    "build": [
+      "node",
+      "build/build.js",
+      ["请选择环境", ["dev", "sit", "pre", "prd"]]
+    ],
+    {{/if}}
+    "lint:es": [
+      "eslint",
+      "--ext",
+      ".js,.vue,.ts",
+      "src"
+    ],
+    "lint:style": [
+       "stylelint",
+       "'src/**/*.{vue,less}'"
+    ],
+    "fix:es": [
+      "eslint",
+      "--fix",
+      "--ext",
+      ".js,.vue,.ts",
+      "src"
+    ],
+    "fix:style": [
+      "stylelint",
+      "'src/**/*.{vue,less}'",
+      " --fix"
+    ],
+    "prepare": [
+      "husky",
+      "install"
+    ],
+    "release": [
+      "standard-version"
+    ]
+  }
+}
