@@ -1,6 +1,6 @@
 require('@babel/register')({
   extensions: ['.ts', '.js'],
 });
-require('./server');
+require('./dev.server.mjs');
 
 
