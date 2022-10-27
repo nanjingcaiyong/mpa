@@ -4,8 +4,9 @@ const languageFiles = require.context('@/language', true, /(?<!index)\.ts/);
 const sitefiles = require.context('.', true, /(?<!index)\.ts/);
 const defaultSite = 'www';
 
-const prefixReg = /[\.]\w+/g;
-const hostPrefix = window.location.host.replace(prefixReg, ''); 
+const siteReg = /(-.+)?\.\w+/g;
+
+const hostPrefix = window.location.host.replace(siteReg, ''); 
 const siteName = window.location.protocol === 'https:' ? hostPrefix : defaultSite;
 
 const languages = languageFiles.keys()
