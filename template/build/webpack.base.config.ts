@@ -46,7 +46,7 @@ function appendHtmlPlugins (_pageNames:any, baseConfig:any) {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       },
-      template: `./src/pages/${page.name}/index.html`, 
+      template: `./src/index.html`, 
       filename: `${page.path}/index.html`,
       app: `<div id="${page.name}"></div>`,
       title: page.title,
