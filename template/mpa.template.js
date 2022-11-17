@@ -12,7 +12,7 @@ export default defineComponent({
   name: '${firstUppercase(pageName)}'
 });
 </script>`,
-      'main.{{#if ts}}t{{else}}js{/if}': 
+{{#if ts}}'main.ts'{{else}}'main.js'{{/if}}: 
 `import { createApp } from 'vue';
 import App from './app.vue';
 createApp(App).mount('#${firstUppercase(pageName)}');`
