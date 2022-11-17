@@ -15,7 +15,7 @@ export default defineComponent({
 {{#if ts}}'main.ts'{{else}}'main.js'{{/if}}: 
 `import { createApp } from 'vue';
 import App from './app.vue';
-createApp(App).mount('#${firstUppercase(pageName)}');`
+createApp(App).mount('#${pageName}');`
     };
   }
 };
